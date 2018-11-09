@@ -4,6 +4,9 @@ import java.io.File;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class FileUploadServiceImpl implements FileUploadService {
 
 	@Override

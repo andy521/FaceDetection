@@ -11,10 +11,12 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.json.JSONObject;
+import org.springframework.stereotype.Service;
 
 import com.baidu.ai.aip.utils.GsonUtils;
 import com.baidu.ai.aip.utils.HttpUtil;
 
+@Service
 public class FaceDetectionServiceImpl implements FaceDetectionService {
 
 	@Override
