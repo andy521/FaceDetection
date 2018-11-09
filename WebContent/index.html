@@ -2,17 +2,25 @@
 <html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
-	<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/lib/custom/dashboard.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="求实杯">
 	<meta name="author" content="小路">
 	<title>中国民航大学求实杯人脸检测系统 - Powered by Baidu Cloud AI</title>
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="lib/custom/dashboard.css" rel="stylesheet">
 </head>
 <body>
-	<p>Test<p>
+	<!--video用于显示媒体设备的视频流-->
+	<video muted id="video" style="width: 640px;height: 360px"></video>
+	<div>
+		<button id="capture" class="btn">拍照</button>
+		<button id="face" class="btn btn-primary">人脸检测</button>
+	</div>
+	<!--描绘video截图-->
+	<canvas id="canvas" width="640" height="360"></canvas>
 </body>
-	<script src="/lib/popper.min.js"></script>
-	<script src="/lib/jquery-3.2.1.min.js"></script>
-	<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="camera.js"></script>
+<script src="lib/popper.min.js"></script>
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 </html>
